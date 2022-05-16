@@ -14,6 +14,19 @@ import java.io.IOException;
 * */
 public class UsingDirectBuffering {
     public static void main(String[] args) throws IOException {
+    	
+    	    File f=  new File(arg[0]);
+
+    	    InputStream is = new FileInputStream(f);
+
+    	    int byteReaded;
+
+    	    while ((byteReaded = is.read())!=-1) {
+    	       System.out.print((char)byteReaded);
+
+    	    }
+    	    
+    	    
 
         //-------------- Test reading 1 MB file. --------------------
         StopWatch.start();
